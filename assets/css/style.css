@@ -120,6 +120,14 @@ h6 {
     padding-top: 5em;
 }
 
+.scrollBot {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    cursor: pointer;
+}
+
 
 /* ============================ Test ============================ */
 
