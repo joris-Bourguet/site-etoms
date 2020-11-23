@@ -51,6 +51,19 @@ h6 {
 
 .RS a {
     cursor: pointer;
+    color: black;
+}
+
+#btnInsta:hover {
+    color: pink;
+}
+
+#btnFb:hover {
+    color: blue;
+}
+
+#btnYt:hover {
+    color: red;
 }
 
 
@@ -126,6 +139,7 @@ h6 {
     left: 50%;
     bottom: 20px;
     cursor: pointer;
+    font-size: 2em;
 }
 
 
