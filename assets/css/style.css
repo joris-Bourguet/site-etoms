@@ -145,9 +145,18 @@ h6 {
 
 /* =========================== Page Team ==========================*/
 
-.team2 {
+#team {
     height: 100vh;
     background-color: tomato;
+}
+
+.scrollBtn {
+    display: flex;
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+    top: 192%;
+    left: 50%;
 }
 
 
