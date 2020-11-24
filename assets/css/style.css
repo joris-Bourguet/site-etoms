@@ -47,6 +47,7 @@ h6 {
     left: 20px;
     gap: 20px;
     z-index: 1022;
+    font-size: 1.5em;
 }
 
 .RS a {
@@ -64,6 +65,23 @@ h6 {
 
 #btnYt:hover {
     color: red;
+}
+
+
+/* ============================ Btn Retourner en haut ================== */
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#topBtn:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
@@ -140,6 +158,23 @@ h6 {
     bottom: 20px;
     cursor: pointer;
     font-size: 2em;
+}
+
+
+/* =========================== Page Team ==========================*/
+
+#team {
+    height: 100vh;
+    background-color: tomato;
+}
+
+.scrollBtn {
+    display: flex;
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+    top: 192%;
+    left: 50%;
 }
 
 
