@@ -37,6 +37,39 @@ h6 {
 }
 
 
+/* ============================ Top Nav Bar ============================ */
+
+.bandeauTop {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.bandeauTop:first-child {
+    padding-left: 5%;
+}
+
+.bandeauTop:last-child {
+    padding-right: 5%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--color-primary);
+}
+
+
 /* ============================ Reseaux sociaux ============================ */
 
 .RS {
@@ -90,36 +123,6 @@ h6 {
 #landingPage {
     height: 100vh;
     position: relative;
-}
-
-#landingPage .bandeauTop {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    min-height: 50px;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2%;
-}
-
-#landingPage .bandeauTop:first-child {
-    padding-left: 5%;
-}
-
-#landingPage .bandeauTop:last-child {
-    padding-right: 5%;
-}
-
-#landingPage nav ul {
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#landingPage nav ul li a {
-    color: var(--color-primary);
 }
 
 #landingPage .wrapperRight {
@@ -189,11 +192,25 @@ h6 {
 /* =========================== Page Contact ==========================*/
 
 #contact {
-    position: relative;
+    display: grid;
     height: 100vh;
+    grid-template-areas: "topBar topBar topBar topBar" "infoContact infoContact formContact formContact";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+}
+
+#contact .bandeauTop {
+    grid-area: topBar;
 }
 
 #contact .infoContact {
+    grid-area: infoContact;
     display: flex;
     flex-direction: column;
+    align-self: center;
+}
+
+#contact .formContact {
+    grid-area: formContact;
+    align-self: center;
 }
