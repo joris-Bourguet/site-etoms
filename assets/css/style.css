@@ -184,3 +184,16 @@ h6 {
     height: 100vh;
     background-color: var(--color-accent);
 }
+
+
+/* =========================== Page Contact ==========================*/
+
+#contact {
+    position: relative;
+    height: 100vh;
+}
+
+#contact .infoContact {
+    display: flex;
+    flex-direction: column;
+}
