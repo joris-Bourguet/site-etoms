@@ -192,25 +192,20 @@ nav ul li a {
 /* =========================== Page Contact ==========================*/
 
 #contact {
-    display: grid;
+    position: relative;
     height: 100vh;
-    grid-template-areas: "topBar topBar topBar topBar" "infoContact infoContact formContact formContact";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(min-content, max-content) 1fr;
 }
 
-#contact .bandeauTop {
-    grid-area: topBar;
+#contact .colInfoContact {
+    background-color: var(--color-accent);
 }
 
 #contact .infoContact {
-    grid-area: infoContact;
     display: flex;
     flex-direction: column;
-    align-self: center;
 }
 
-#contact .formContact {
-    grid-area: formContact;
-    align-self: center;
+#contact .form-container {
+    transform: translateY(calc(50% + 150px));
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
