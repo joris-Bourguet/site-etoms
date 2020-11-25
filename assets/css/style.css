@@ -13,6 +13,7 @@ font-family: 'Rubik', sans-serif;
     --color-primary: #F7EEDF;
     --color-secondary: #8AAACB;
     --color-accent: #8B615E;
+    --color-accent-hover: #8b615ed0;
 }
 
 * {
@@ -34,6 +35,30 @@ h4,
 h5,
 h6 {
     font-family: var(--font-accent);
+}
+
+
+/* ============================ Init Bootstrap ============================ */
+
+.btn-primary {
+    background-color: var(--color-accent) !important;
+    border-color: var(--color-accent) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover) !important;
+    border-color: var(--color-accent-hover) !important;
+}
+
+.btn-primary:active {
+    background-color: var(--color-accent-hover) !important;
+    border-color: var(--color-accent-hover) !important;
+}
+
+.btn-primary:focus {
+    background-color: var(--color-accent-hover) !important;
+    border-color: var(--color-accent-hover) !important;
+    box-shadow: 0 0 0 .2rem var(--color-accent-hover) !important;
 }
 
 
@@ -193,7 +218,23 @@ nav ul li a {
 
 #contact {
     position: relative;
+    display: grid;
+    grid-template-areas: "topBar" "FormContact";
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
     height: 100vh;
+}
+
+#contact .bandeauTop {
+    grid-area: topBar;
+}
+
+#contact .form-container>div {
+    padding: 2rem;
+}
+
+#contact .form-container h2 {
+    padding: 0 0 1rem 0;
 }
 
 #contact .colInfoContact {
@@ -201,11 +242,27 @@ nav ul li a {
 }
 
 #contact .infoContact {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-primary);
+}
+
+#contact .infoContact a {
+    color: var(--color-primary);
+}
+
+#contact .infoContact a span {
+    padding: 0 1rem 0 0;
+}
+
+#contact .infoContact a span i {
+    font-size: 1.2rem;
 }
 
 #contact .form-container {
-    transform: translateY(calc(50% + 150px));
+    grid-area: FormContact;
+    align-self: center;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }

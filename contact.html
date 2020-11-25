@@ -35,31 +35,51 @@
             </nav>
         </div>
         <div class="row form-container">
-            <div class="col-lg-6 colInfoContact">
+            <div class="col-12 col-lg-4 colInfoContact">
                 <div class="infoContact">
                     <h2>Nos informations de contact !</h2>
-                    <a href="tel:+33000000000">00.00.00.00.00</a>
-                    <a href="mailto:etoms@gmail.com">etoms@gmail.com</a>
-                    <a href="https://www.google.com/maps/place/Digital+Campus+Montpellier/@43.6011688,3.9099822,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6a57c9d78a89f:0x394e0b6aa6f8cce3!8m2!3d43.6011688!4d3.9121709">Google maps</a>
+                    <a href="tel:+33000000000"><span><i class="fas fa-phone"></i></span> 00.00.00.00.00</a>
+                    <a href="mailto:etoms@gmail.com"><span><i class="fas fa-envelope"></i></span> etoms@gmail.com</a>
+                    <a href="https://www.google.com/maps/place/Digital+Campus+Montpellier/@43.6011688,3.9099822,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6a57c9d78a89f:0x394e0b6aa6f8cce3!8m2!3d43.6011688!4d3.9121709"><span><i class="fas fa-map-marker-alt"></i></span> Google maps</a>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-12 col-lg-8">
                 <div class="formContact">
                     <h2>Contactez-nous !</h2>
                     <form class="was-validated">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control form-control-lg is-invalid" placeholder="First name" required>
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control form-control-lg is-invalid" placeholder="Last name" required>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <label for="name">Prénom : </label>
+                                    <input type="text" id="name" class="form-control form-control-lg is-invalid" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="lastName">Nom : </label>
+                                    <input type="text" id="lastName" class="form-control form-control-lg is-invalid" required>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control is-invalid" id="message" rows="5" required></textarea>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <label for="email">Email : </label>
+                                    <input type="email" id="email" class="form-control form-control-lg is-invalid" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="phone">Phone : </label>
+                                    <input type="tel" id="phone" class="form-control form-control-lg is-invalid" required>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn mb-2">Confirm identity</button>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <label for="message">Message</label>
+                                <textarea class="form-control is-invalid" id="message" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Confirm identity</button>
+                        </div>
                     </form>
                 </div>
             </div>
