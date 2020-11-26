@@ -2,7 +2,7 @@ function navigation() {
     const btnScroll = document.querySelector(".scrollBot");
     const btnScroll_ = document.querySelector(".scrollBtn");
     const topDiv2 = document.querySelector("#team")
-    const topDiv3 = document.querySelector("#test")
+    const topDiv3 = document.querySelector("#botPage")
     const scrollTop = document.getElementById("topBtn")
 
     // click = scroll to top

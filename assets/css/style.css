@@ -223,7 +223,7 @@ nav ul li a {
 
 #team {
     height: 100vh;
-    background-color: tomato;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
 }
@@ -238,30 +238,44 @@ nav ul li a {
 }
 
 .notrequipe {
-    position: relative;
-    top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10%;
 }
 
 .notrequipe p {
-    max-width: 30%;
+    max-width: 40%;
     position: relative;
     text-align: center;
 }
 
-.teamcard {
-    position: relative;
-    top: 25%;
+.rsCards {
+    display: flex;
+    justify-content: space-around;
+    max-width: 30%;
 }
 
 
-/* ============================ Test ============================ */
+/* ============================ Page 3 ============================ */
 
-.test2 {
+#botPage {
     height: 100vh;
     background-color: var(--color-accent);
+}
+
+.rowCarousel {
+    padding-top: 10%;
+}
+
+.magasin {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 10em;
+}
+
+.rowShop {
+    padding-top: 10%;
 }
 
 
