@@ -264,8 +264,15 @@ nav ul li a {
     background-color: var(--color-accent);
 }
 
+.page3 {
+    height: 100vh;
+    background-color: var(--color-accent);
+    padding-top: 5%;
+}
+
 .rowCarousel {
-    padding-top: 10%;
+    padding-top: 2%;
+    background-color: var(--color-primary);
 }
 
 .magasin {
@@ -275,7 +282,20 @@ nav ul li a {
 }
 
 .rowShop {
-    padding-top: 10%;
+    padding-top: 5%;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--color-primary) 1px;
+}
+
+.gaucheCarousel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 
