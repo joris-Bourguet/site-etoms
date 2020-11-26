@@ -14,7 +14,6 @@ function menu() {
         liens.classList.toggle('open');
         changeColor()
     })
-
     changeColor()
 }
 
