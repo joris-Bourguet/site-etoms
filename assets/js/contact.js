@@ -1,7 +1,12 @@
 function contact() {
+    const headerHeight = document.querySelector("#header").clientHeight
     const formContact = document.querySelector(".form-container");
-    let formContainerHeight = formContact.clientHeight
-    formContact.style.transform = "translateY(-" + formContainerHeight / 2 + "px)";
+    const sectionContact = document.querySelector('#contact').clientHeight;
+    let top = ((sectionContact + headerHeight) / 2) / 2;
+    console.log(top);
+
+    formContact.style.top = top + 'px';
+
 }
 
 export { contact }

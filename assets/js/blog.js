@@ -1,0 +1,5 @@
+function blog() {
+
+}
+
+export { blog }
