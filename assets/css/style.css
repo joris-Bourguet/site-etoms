@@ -245,7 +245,7 @@ nav ul li a {
 }
 
 .notrequipe p {
-    max-width: 30%;
+    max-width: 40%;
     position: relative;
     text-align: center;
 }
@@ -257,11 +257,25 @@ nav ul li a {
 }
 
 
-/* ============================ Test ============================ */
+/* ============================ Page 3 ============================ */
 
-.test2 {
+#botPage {
     height: 100vh;
     background-color: var(--color-accent);
+}
+
+.rowCarousel {
+    padding-top: 10%;
+}
+
+.magasin {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 10em;
+}
+
+.rowShop {
+    padding-top: 10%;
 }
 
 
