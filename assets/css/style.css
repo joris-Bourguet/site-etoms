@@ -269,27 +269,24 @@ nav ul li a {
 
 #contact {
     position: relative;
-    display: grid;
-    grid-template-areas: "topBar" "FormContact";
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(min-content, max-content) 1fr;
     height: 100vh;
 }
 
-#contact .bandeauTop {
-    grid-area: topBar;
-}
-
-#contact .form-container>div {
-    padding: 2rem;
-}
-
-#contact .form-container h2 {
-    padding: 0 0 1rem 0;
+#contact .form-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 #contact .colInfoContact {
     background-color: var(--color-accent);
+    padding: 2rem;
+}
+
+#contact .colFormContact {
+    padding: 2rem;
 }
 
 #contact .infoContact {
@@ -312,8 +309,17 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-#contact .form-container {
-    grid-area: FormContact;
-    align-self: center;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+/* =========================== Header ==========================*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-accent);
 }
