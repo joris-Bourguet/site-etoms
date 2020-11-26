@@ -1,5 +1,4 @@
 function header() {
-    const header = document.querySelector('#header');
     const titlePage = document.querySelector('.titlePage') || "";
     let title = "";
     if (document.URL.includes("blog")) {

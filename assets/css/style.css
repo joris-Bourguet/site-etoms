@@ -81,7 +81,7 @@ h6 {
 }
 
 
-/* ============================ Top Nav Bar ============================ */
+/* ============================ MENU ============================ */
 
 .hamburger {
     z-index: 999;
@@ -89,6 +89,19 @@ h6 {
     cursor: pointer;
     left: 5%;
     top: 5%;
+}
+
+.usefullLinks {
+    z-index: 999;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    display: flex;
+    gap: 20px;
+}
+
+.usefullLinks a {
+    color: var(--color-primary);
 }
 
 .hamburger .line {
