@@ -119,7 +119,7 @@ h6 {
 }
 
 #landingPage nav ul li a {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 #landingPage .wrapperRight {
@@ -166,6 +166,8 @@ h6 {
 #team {
     height: 100vh;
     background-color: tomato;
+    display: flex;
+    flex-direction: column;
 }
 
 .scrollBtn {
@@ -175,6 +177,25 @@ h6 {
     position: absolute;
     top: 192%;
     left: 50%;
+}
+
+.notrequipe {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notrequipe p {
+    max-width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.teamcard {
+    position: relative;
+    top: 25%;
 }
 
 
