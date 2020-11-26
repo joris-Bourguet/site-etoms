@@ -150,6 +150,36 @@ nav ul li a {
     position: relative;
 }
 
+#landingPage .bandeauTop {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+#landingPage .bandeauTop:first-child {
+    padding-left: 5%;
+}
+
+#landingPage .bandeauTop:last-child {
+    padding-right: 5%;
+}
+
+#landingPage nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#landingPage nav ul li a {
+    color: var(--color-secondary);
+}
+
 #landingPage .wrapperRight {
     z-index: 0;
     position: absolute;
@@ -194,6 +224,8 @@ nav ul li a {
 #team {
     height: 100vh;
     background-color: tomato;
+    display: flex;
+    flex-direction: column;
 }
 
 .scrollBtn {
@@ -203,6 +235,25 @@ nav ul li a {
     position: absolute;
     top: 192%;
     left: 50%;
+}
+
+.notrequipe {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notrequipe p {
+    max-width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.teamcard {
+    position: relative;
+    top: 25%;
 }
 
 
