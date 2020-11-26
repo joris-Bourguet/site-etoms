@@ -223,7 +223,7 @@ nav ul li a {
 
 #team {
     height: 100vh;
-    background-color: tomato;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
 }
@@ -238,11 +238,10 @@ nav ul li a {
 }
 
 .notrequipe {
-    position: relative;
-    top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10%;
 }
 
 .notrequipe p {
@@ -251,9 +250,10 @@ nav ul li a {
     text-align: center;
 }
 
-.teamcard {
-    position: relative;
-    top: 25%;
+.rsCards {
+    display: flex;
+    justify-content: space-around;
+    max-width: 30%;
 }
 
 
