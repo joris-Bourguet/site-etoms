@@ -66,6 +66,7 @@ h6 {
 
 #header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -78,6 +79,16 @@ h6 {
 
 #header .titlePage {
     color: var(--color-primary);
+}
+
+#header form {
+    z-index: 1;
+    width: 30%;
+    display: flex;
+}
+
+#header form input {
+    flex: 1;
 }
 
 
@@ -318,6 +329,80 @@ h6 {
 }
 
 
+/* =========================== Boutique ==========================*/
+
+#boutique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#boutique .col-gauche {
+    flex: 1;
+}
+
+#boutique .col-gauche .block {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#boutique .col-gauche .imagePrincipale img {
+    max-width: 100%;
+}
+
+#boutique .col-gauche .autresImages img {
+    max-width: 100%;
+}
+
+#boutique .col-gauche .autresImages {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#boutique .col-droite {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#boutique .col-droite h3 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+#boutique .col-droite p {
+    max-width: 70%;
+}
+
+#boutique .col-droite .paiement {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 10%;
+}
+
+#boutique .col-droite .paiement .numberOfArticles {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#boutique .col-droite .paiement .numberOfArticles .number {
+    margin: 0;
+}
+
+#boutique .col-droite .paiement .close {
+    float: unset !important;
+}
+
+
 /* =========================== Page Contact ==========================*/
 
 #contact {
@@ -359,4 +444,25 @@ h6 {
 
 #contact .infoContact a span i {
     font-size: 1.2rem;
+}
+
+
+/* =========================== Media Queries ==========================*/
+
+@media screen and (min-width: 1430px) {
+    #boutique .col-gauche .block {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    #boutique .col-gauche .block {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #boutique .col-gauche .block {
+        max-width: 40%;
+    }
 }
