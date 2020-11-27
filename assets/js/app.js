@@ -6,10 +6,11 @@ import { blog } from "./blog.js";
 
 header()
 menu()
-blog()
 
 if (document.URL.includes("index.html")) {
     navigation()
 } else if (document.URL.includes("contact.html")) {
     contact()
+} else if (document.URL.includes("blog.html")) {
+    blog()
 }
