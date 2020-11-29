@@ -4,6 +4,8 @@ import { menu } from "./menu.js";
 import { header } from "./header.js";
 import { blog } from "./blog.js";
 import { boutique } from "./boutique.js";
+import { cartable } from "./cartable.js"
+import { marque } from "./marque.js"
 
 header()
 menu()
@@ -16,4 +18,8 @@ if (document.URL.includes("index.html")) {
     blog()
 } else if (document.URL.includes("boutique.html")) {
     boutique()
+} else if (document.URL.includes("cartable.html")) {
+    cartable()
+} else if (document.URL.includes("marque.html")) {
+    marque()
 }
