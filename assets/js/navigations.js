@@ -4,6 +4,13 @@ function navigation() {
     const topDiv2 = document.querySelector("#team")
     const topDiv3 = document.querySelector("#botPage")
     const scrollTop = document.getElementById("topBtn")
+    const landingPageSection = document.querySelector('#landingPage')
+    const headerHeight = document.querySelector('#header').clientHeight;
+
+    console.log(landingPageSection, headerHeight);
+
+    let startTop = headerHeight + 50;
+    $(landingPageSection).css("padding-top", startTop + "px");
 
     // click = scroll to top
     scrollTop.addEventListener('click', () => {

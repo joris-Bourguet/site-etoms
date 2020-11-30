@@ -201,7 +201,7 @@ h6 {
 /* ============================ LandingPage ============================ */
 
 #landingPage {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -246,7 +246,7 @@ h6 {
 /* =========================== Page Team ==========================*/
 
 #team {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
@@ -284,12 +284,12 @@ h6 {
 /* ============================ caroussel Accueil ============================ */
 
 #botPage {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-accent);
 }
 
 .page3 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-accent);
     padding-top: 5%;
 }
@@ -448,27 +448,6 @@ h6 {
 
 
 /* =========================== Notre Marque ==========================*/
-
-
-/* =========================== Media Queries ==========================*/
-
-@media screen and (min-width: 1430px) {
-    #boutique .col-gauche .block {
-        max-width: 60%;
-    }
-}
-
-@media screen and (min-width: 1650px) {
-    #boutique .col-gauche .block {
-        max-width: 50%;
-    }
-}
-
-@media screen and (min-width: 2000px) {
-    #boutique .col-gauche .block {
-        max-width: 40%;
-    }
-}
 
 
 /* =========================== Time Line ==========================*/
@@ -671,4 +650,42 @@ h6 {
     top: auto;
     bottom: 0px;
     left: 43px;
+}
+
+
+/* =========================== Media Queries ==========================*/
+
+@media screen and (max-width: 950px) {
+    #boutique {
+        flex-direction: column;
+    }
+    #boutique .imagePrincipale img {
+        width: 100%;
+    }
+    .col-droite {
+        padding: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    #boutique .col-gauche .block {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1430px) {
+    #boutique .col-gauche .block {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    #boutique .col-gauche .block {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #boutique .col-gauche .block {
+        max-width: 40%;
+    }
 }
